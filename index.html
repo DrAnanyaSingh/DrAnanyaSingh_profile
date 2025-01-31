@@ -1,46 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Ananya Singh - Professional Profile</title>
+    <meta name="description" content="Dr. Ananya Singh - Professional Homoeopathic Doctor specializing in holistic healing approaches. Book an appointment today.">
+    <meta name="keywords" content="homoeopathy, doctor, holistic healing, Dr. Ananya Singh, medical care">
+    <meta name="author" content="Dr. Ananya Singh">
+    <meta property="og:title" content="Dr. Ananya Singh - Professional Profile">
+    <meta property="og:description" content="Professional Homoeopathic Doctor specializing in holistic healing approaches">
+    <meta property="og:image" content="image1.jpg">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        .hover-card {
+            transition: transform 0.3s ease;
+        }
+        .hover-card:hover {
+            transform: translateY(-5px);
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
 </head>
 
 <body class="bg-gray-100 text-gray-900">
-
     <!-- Hero Section -->
-    <div class="bg-cover bg-center h-80 mb-8 rounded-lg shadow-md relative" style="background-image: url('hero-image.jpg');">
-        <div class="h-full bg-opacity-70 bg-black flex flex-col items-center justify-center rounded-lg">
-            <h1 class="text-white text-5xl font-bold mb-4">Dr. Ananya Singh</h1>
-            <a href="https://calendly.com/ananya-in-singh/doctors-appointment" target="_blank" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300">
-                Book an Appointment
-            </a>
+    <div class="bg-cover bg-center h-96 mb-8 rounded-lg shadow-md relative" style="background-image: url('hero-image.jpg');">
+        <div class="h-full bg-opacity-60 bg-black flex flex-col items-center justify-center rounded-lg">
+            <h1 class="text-white text-6xl font-bold mb-4 animate-fade-in">Dr. Ananya Singh</h1>
+            <p class="text-white text-xl mb-6 max-w-2xl text-center px-4">
+                Specialized in Homoeopathic Medicine with expertise in holistic healing approaches
+            </p>
+            <div class="space-x-4 flex flex-wrap justify-center gap-4 px-4">
+                <a href="https://calendly.com/ananya-in-singh/doctors-appointment" target="_blank" 
+                   class="bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition duration-300 transform hover:scale-105">
+                    Book an Appointment
+                </a>
+                <a href="#contact" 
+                   class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-black transition duration-300">
+                    Contact Me
+                </a>
+            </div>
         </div>
     </div>
 
     <div class="container mx-auto p-6">
-
         <!-- Header Section -->
         <div class="flex flex-wrap items-center mb-8">
             <!-- Photo Section -->
             <div class="w-full sm:w-1/4 flex justify-center sm:justify-start mb-4 sm:mb-0">
-                <img src="image1.jpg" alt="Dr. Ananya Singh" class="w-40 h-40 rounded-full shadow-md border-4 border-white">
+                <img src="image1.jpg" alt="Dr. Ananya Singh" class="w-40 h-40 rounded-full shadow-md border-4 border-white hover:scale-105 transition duration-300">
             </div>
 
             <!-- Professional Summary Section -->
             <div class="w-full sm:w-3/4 sm:pl-6">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h2 class="text-3xl font-bold mb-2">Professional Profile</h2>
-                    <h3 class="text-xl text-gray-700 mb-4">PGR @ Dr. MPK Homoeopathic Medical College | Doctor of Medicine (MD)</h3>
-                    <p class="text-gray-600 leading-relaxed">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover-card">
+                    <h2 class="text-3xl font-bold mb-2 text-blue-600">Professional Profile</h2>
+                    <div class="flex flex-wrap items-center mb-4">
+                        <h3 class="text-xl text-gray-700">PGR @ Dr. MPK Homoeopathic Medical College</h3>
+                        <span class="mx-2 hidden md:block">|</span>
+                        <span class="text-blue-500">Doctor of Medicine (MD)</span>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-4">
                         As a Postgraduate Resident (PGR) at Dr. MPK Homoeopathic Medical College, I am deeply committed
                         to holistic patient care, continually expanding my expertise in homoeopathic medicine. My
                         journey includes managing acute and chronic cases across diverse medical disciplines, always
                         prioritizing personalized healthcare and collaborative approaches to improve outcomes.
                     </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Homoeopathy</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Patient Care</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Research</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills & Expertise Section -->
+        <div class="mb-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg hover-card">
+                <h2 class="text-2xl font-bold mb-6"><i class="fas fa-star mr-2 text-blue-500"></i>Skills & Expertise</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="p-4 border rounded-lg text-center hover:shadow-md transition duration-300">
+                        <i class="fas fa-hospital-user text-3xl text-blue-500 mb-2"></i>
+                        <h3 class="font-bold">Patient Care</h3>
+                        <p class="text-gray-600 text-sm">Holistic approach to healing</p>
+                    </div>
+                    <div class="p-4 border rounded-lg text-center hover:shadow-md transition duration-300">
+                        <i class="fas fa-microscope text-3xl text-blue-500 mb-2"></i>
+                        <h3 class="font-bold">Research</h3>
+                        <p class="text-gray-600 text-sm">Evidence-based practice</p>
+                    </div>
+                    <div class="p-4 border rounded-lg text-center hover:shadow-md transition duration-300">
+                        <i class="fas fa-users text-3xl text-blue-500 mb-2"></i>
+                        <h3 class="font-bold">Team Collaboration</h3>
+                        <p class="text-gray-600 text-sm">Effective communication</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,24 +111,29 @@
         <!-- Professional Experience Section -->
         <div class="mb-8">
             <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-bold mb-4"><i class="fas fa-briefcase mr-2"></i>Professional Experience</h2>
+                <h2 class="text-2xl font-bold mb-4"><i class="fas fa-briefcase mr-2 text-blue-500"></i>Professional Experience</h2>
                 <ul class="space-y-6">
-                    <li class="flex items-start">
-                        <div class="bg-blue-500 text-white p-2 rounded-full mr-4">
-                            <i class="fas fa-stethoscope"></i>
+                    <li class="flex items-start hover-card p-4 rounded-lg">
+                        <div class="bg-blue-500 text-white p-3 rounded-full mr-4 shadow-lg">
+                            <i class="fas fa-stethoscope text-xl"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold">PGR at Dr. MPK Homoeopathic Medical College (2023 - Present)</h3>
+                            <div class="flex items-center flex-wrap gap-2 mb-2">
+                                <h3 class="text-xl font-bold text-blue-600">PGR at Dr. MPK Homoeopathic Medical College</h3>
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Present</span>
+                            </div>
+                            <p class="text-gray-700 mb-2">2023 - Present</p>
                             <p class="text-gray-600">Diagnosed and prescribed medications, researched the effectiveness of CARDUUS MARIANUS
                                 Mother Tincture, and collaborated with teams for data analysis and presentation.</p>
                         </div>
                     </li>
-                    <li class="flex items-start">
-                        <div class="bg-green-500 text-white p-2 rounded-full mr-4">
-                            <i class="fas fa-user-md"></i>
+                    <li class="flex items-start hover-card p-4 rounded-lg">
+                        <div class="bg-green-500 text-white p-3 rounded-full mr-4 shadow-lg">
+                            <i class="fas fa-user-md text-xl"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold">Junior Doctor Intern, Solan Homeopathic Medical College (2022 - 2023)</h3>
+                            <h3 class="text-xl font-bold text-blue-600">Junior Doctor Intern, Solan Homeopathic Medical College</h3>
+                            <p class="text-gray-700 mb-2">2022 - 2023</p>
                             <p class="text-gray-600">Managed cases in Psychiatry, Dermatology, Pediatrics, Surgery, and Gynecology, maintaining
                                 detailed records for acute and chronic cases while providing follow-up care.</p>
                         </div>
@@ -75,34 +143,34 @@
         </div>
 
         <!-- Education Section -->
-        <div>
+        <div class="mb-8">
             <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-bold mb-4"><i class="fas fa-graduation-cap mr-2"></i>Education</h2>
+                <h2 class="text-2xl font-bold mb-4"><i class="fas fa-graduation-cap mr-2 text-blue-500"></i>Education</h2>
                 <ul class="space-y-6">
-                    <li class="flex items-start">
-                        <div class="bg-red-500 text-white p-2 rounded-full mr-4">
-                            <i class="fas fa-university"></i>
+                    <li class="flex items-start hover-card p-4 rounded-lg">
+                        <div class="bg-red-500 text-white p-3 rounded-full mr-4 shadow-lg">
+                            <i class="fas fa-university text-xl"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold">Doctor of Medicine (MD)</h3>
+                            <h3 class="text-xl font-bold text-blue-600">Doctor of Medicine (MD)</h3>
                             <p class="text-gray-600">Dr. MPK Homoeopathic Medical College (2023 - 2026)</p>
                         </div>
                     </li>
-                    <li class="flex items-start">
-                        <div class="bg-yellow-500 text-white p-2 rounded-full mr-4">
-                            <i class="fas fa-user-graduate"></i>
+                    <li class="flex items-start hover-card p-4 rounded-lg">
+                        <div class="bg-yellow-500 text-white p-3 rounded-full mr-4 shadow-lg">
+                            <i class="fas fa-user-graduate text-xl"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold">Bachelor of Homoeopathic Medicine and Surgery</h3>
+                            <h3 class="text-xl font-bold text-blue-600">Bachelor of Homoeopathic Medicine and Surgery</h3>
                             <p class="text-gray-600">Solan Homeopathic Medical College (2016 - 2021)</p>
                         </div>
                     </li>
-                    <li class="flex items-start">
-                        <div class="bg-purple-500 text-white p-2 rounded-full mr-4">
-                            <i class="fas fa-book"></i>
+                    <li class="flex items-start hover-card p-4 rounded-lg">
+                        <div class="bg-purple-500 text-white p-3 rounded-full mr-4 shadow-lg">
+                            <i class="fas fa-book text-xl"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold">Biology, General</h3>
+                            <h3 class="text-xl font-bold text-blue-600">Biology, General</h3>
                             <p class="text-gray-600">Rani Laxmi Bai Memorial School (2014 - 2015)</p>
                         </div>
                     </li>
@@ -112,20 +180,51 @@
     </div>
 
     <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white py-6 mt-12">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2025 Dr. Ananya Singh. All rights reserved.</p>
-            <p>Contact: <a href="mailto:ananya.in.singh@gmail.com" class="text-blue-400">ananya.in.singh@gmail.com</a></p>
-            <div class="mt-4">
-                <a href="https://www.linkedin.com/in/ananyasingh" class="text-gray-400 hover:text-white mx-2"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/ananyasingh" class="text-gray-400 hover:text-white mx-2"><i class="fab fa-twitter"></i></a>
-                <a href="https://github.com/ananyasingh" class="text-gray-400 hover:text-white mx-2"><i class="fab fa-github"></i></a>
+    <footer id="contact" class="bg-gray-800 text-white py-12 mt-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Dr. Ananya Singh</h3>
+                    <p class="text-gray-400">Committed to holistic healing and patient care</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <p class="text-gray-400">Email: <a href="mailto:ananya.in.singh@gmail.com" 
+                        class="hover:text-blue-400 transition duration-300">ananya.in.singh@gmail.com</a></p>
+                    <p class="text-gray-400">Location: Dr. MPK Homoeopathic Medical College</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/in/dr-ananya-singh-0a979a296" 
+                           class="text-gray-400 hover:text-white transition duration-300" 
+                           target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="https://github.com/DrAnanyaSingh" 
+                           class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2025 Dr. Ananya Singh. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lazy Loading Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var images = document.querySelectorAll('img[data-src]');
+            images.forEach(img => {
+                img.setAttribute('src', img.getAttribute('data-src'));
+                img.onload = function() {
+                    img.removeAttribute('data-src');
+                };
+            });
+        });
+    </script>
 </body>
-
 </html>
